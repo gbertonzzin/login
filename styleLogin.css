@@ -16,7 +16,17 @@ body { background-color: grey}
 	}
 
 .subtitulo{
+	padding:10px;
 	text-align:center;
 	font-size:20px;
-	padding:10px;
+	}
+
+#Aviso {
+	display:none;
+	margin: 0 auto;
+	width: 300px;
+	background-color: red;
+	padding: 20px;
+	border-radius: 25px;
+	text-align:center;
 	}

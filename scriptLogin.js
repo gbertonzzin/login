@@ -1,16 +1,18 @@
 function validar() {
  	var usr = document.forms["entrada"]["usuario"].value;
 	var psw = document.forms["entrada"]["senha"].value;
+	var avisos = ["É necessário inserir seu usuário!", "É necessário inserir sua senha!"]
 	if (usr == "") {
 		document.getElementById("Aviso").style.display = "block"
-		document.getElementById("Aviso").innerHTML = "É necessário inserir seu usuário!";
+		document.getElementById("Aviso").innerHTML = avisos[0]
 		setTimeout(sumirAviso, 3000)
+		return false;
   	}
 	else if (psw == "") {
 		document.getElementById("Aviso").style.display = "block"
-		document.getElementById("Aviso").innerHTML = "É necessário inserir sua senha!";
+		document.getElementById("Aviso").innerHTML = avisos[1];
 		setTimeout(sumirAviso, 3000)
-    	return false;
+		return false;
   	}
 }
 function sumirAviso () {

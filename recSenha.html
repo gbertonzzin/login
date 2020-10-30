@@ -2,23 +2,22 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>SISTEMA - Login</title>
+	<title>SISTEMA - Recuperação de senha</title>
 	<link rel="stylesheet" href="styleLogin.css">
-	<script src="scriptLogin.js"></script>
+	<script src="scriptLogin2.js"></script>
 </head>
 
 <body>
 <div class="div-login">
 	<div class="titulo">SISTEMA</div>
-	<div class="subtitulo">Área de autenticacão</div>
+	<div class="subtitulo">Recuperação de senha</div>
 	
 	<div class="entrada">
 		<form name="entrada" method="post">
     			<input type="text" placeholder="Usuário" name="usuario">
-    			<input type="password" placeholder="Senha" name="senha">
-     			<input type="button" value="ENTRAR" onclick="validar()">
+    			<input type="text" placeholder="E-mail" name="email">
+     			<input type="button" value="ENTRAR" onclick="validarRec()">
      			<input type="checkbox" checked="checked" name="remember"> Lembrar?
-			<a href="recSenha.html">Esqueceu sua senha?</a>
 		</form>
 	</div>
 </div>

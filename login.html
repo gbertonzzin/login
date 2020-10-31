@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>SISTEMA - Login</title>
 	<link rel="stylesheet" href="styleLogin.css">
-	<script src="scriptLogin.js"></script>
+	<script src="scriptLogin2.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,9 @@
 	
 	<div class="entrada">
 		<form name="entrada" method="post">
-    			<input type="text" placeholder="Usuário" name="usuario">
-    			<input type="password" placeholder="Senha" name="senha">
-     			<input type="button" value="ENTRAR" onclick="validar()">
+    			<input type="text" placeholder="Usuário" class="usuario" name="usuario" maxlength="16">
+    			<input type="password" placeholder="Senha" class="senha" name="senha" maxlength="16">
+     			<div><input type="button" class="botao" value="ENTRAR" onclick="validar()"></div>
      			<input type="checkbox" checked="checked" name="remember"> Lembrar?
 			<a href="recSenha.html">Esqueceu sua senha?</a>
 		</form>
